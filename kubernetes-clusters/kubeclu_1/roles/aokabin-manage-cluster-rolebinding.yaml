@@ -1,0 +1,12 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: node-manager-binding
+subjects:
+  - kind: UserAccount
+    name: aokabin
+    apiGroup: ""
+roleRef:
+  kind: ClusterRole
+  name: node-manager 
+  apiGroup: ""
