@@ -3,7 +3,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: node-manager-binding
 subjects:
-  - kind: User
+  - kind: UserAccount
     name: aokabin
     apiGroup: ""
 roleRef:

@@ -13,7 +13,8 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "centos/7"
-  config.vm.network "private_network", ip: "192.168.50.2"
+  config.vm.network "private_network", ip: "192.233.133.11"
+  # config.vm.network :forwarded_port, host: 6443, guest: 6443
   # config.vm.network "private_network", ip: "10.0.50.2"
 
   # Disable automatic box update checking. If you disable this, then
